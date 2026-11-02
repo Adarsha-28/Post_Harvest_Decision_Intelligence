@@ -1,0 +1,51 @@
+{
+  "model_name": "AgriConnect AI Agricultural Price Forecaster",
+  "algorithm": "HistGradientBoostingRegressor",
+  "trained_at": "2026-10-19T05:56:47.819901+00:00",
+  "dataset_composition": {
+    "total_samples": 34774,
+    "synthetic_demo_samples": 29088,
+    "real_apmc_samples": 5686,
+    "data_notice": "Trained on both synthetic demo time-series and verified real APMC market observations. Demo predictions must be labeled as illustrative."
+  },
+  "evaluation_metrics": {
+    "test_mae_inr_per_quintal": 1624.97,
+    "test_rmse_inr_per_quintal": 4616.24,
+    "test_r2_score": 0.2449,
+    "baseline_mae_inr_per_quintal": 3744.53,
+    "improvement_over_baseline_pct": 56.6
+  },
+  "features": {
+    "categorical": [
+      "crop_type",
+      "state",
+      "district"
+    ],
+    "numerical": [
+      "month",
+      "day_of_week",
+      "day_of_year",
+      "quarter",
+      "min_price_inr_per_quintal",
+      "max_price_inr_per_quintal"
+    ]
+  },
+  "supported_crops_count": 119,
+  "supported_crops_sample": [
+    "Amaranthus",
+    "Amla(Nelli Kai)",
+    "Apple",
+    "Arecanut(Betelnut/Supari)",
+    "Ashgourd",
+    "Baby Corn",
+    "Bajra(Pearl Millet/Cumbu)",
+    "Banana",
+    "Banana - Green",
+    "Basmati Rice",
+    "Beans",
+    "Beetroot",
+    "Bengal Gram(Gram)(Whole)",
+    "Betal Leaves",
+    "Bhindi(Ladies Finger)"
+  ]
+}
