@@ -1,0 +1,18 @@
+{
+  "dataset_name": "AgriConnect AI Synthetic Demo Dataset",
+  "generated_on": "2026-10-19",
+  "total_rows": 100000,
+  "purpose": "Development, UI demos, API integration tests, and database seeding",
+  "important_notice": "All records are synthetic. They are not real farmers, companies, warehouses, prices, transactions, or validated AI predictions. Do not use as evidence of actual market conditions or for production decisions.",
+  "tables": {
+    "users.csv": 5000,
+    "harvests.csv": 25000,
+    "market_prices.csv": 30000,
+    "warehouses.csv": 5000,
+    "transport_services.csv": 5000,
+    "industry_buyers.csv": 3000,
+    "biomass_listings.csv": 12000,
+    "bookings.csv": 10000,
+    "recommendations.csv": 5000
+  }
+}
